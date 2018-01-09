@@ -2,5 +2,5 @@
 Description=Executes getevents.sh
 
 [Service]
-Type=oneshot
+Type=simple
 ExecStart=/opt/vmevents/getevents.sh
