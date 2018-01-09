@@ -12,7 +12,7 @@ eventCount=$(grep -ci '\[\]' <<< $events)
 
 if (( $eventCount < 1 )); then
     logger "vmevents.sh Sending event data to Azure Function"
-    curl -H "Content-Type:application/json" --data "$events" https://vmevents.azurewebsites.net/api/SendEmail?code=igtLwOn2t4s69X4mozuh0uWd8i5jXEILOk6kakIQS0qO8IC0rs6j/Q==
+    curl -H "Content-Type:application/json" --data "$events" https://[your_function_app_name].azurewebsites.net/api/SendEmail?code=[your_function_authentication_code]
 
     # EXEUCTE YOUR APPLICATION STEPS HERE
 
