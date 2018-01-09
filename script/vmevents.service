@@ -1,0 +1,6 @@
+[Unit]
+Description=Executes getevents.sh
+
+[Service]
+Type=oneshot
+ExecStart=/opt/vmevents/getevents.sh
