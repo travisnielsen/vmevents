@@ -3,3 +3,4 @@ Description=Run vmevents.service every 5 minutes
 
 [Timer]
 OnCalendar=*:0/05
+Unit=vmevents.service
